@@ -1,0 +1,139 @@
+int main() 
+begin
+    int x = 0;
+    while ( x < 5 )
+    {
+        print (9999);
+        x = x+1 + (x * 2 / 3);
+        print x;
+    }
+    foo();
+    foo(3);
+    foo(0);
+
+    foo(1, 5.5, true, 3, 6.9, 420);
+    
+    print test_3();
+    print test_4();
+    print test5();
+
+    for(int i = 0; i < 8; i = i+1)
+    {
+        print i;
+        print test_6(i);
+    }
+    
+
+    return (x);
+end
+
+int foo()
+
+begin
+    int y = 0;
+    for (int y = 0; y < 5; y = y+1)
+    { 
+        print 99; 
+        print y;
+
+        if (y == 3) begin
+            print 1337;
+        end
+    }
+    return (y);
+end
+
+int foo(int val)
+{
+    if(val + 2 > 3)
+    {
+        print 4590;
+    }
+    else
+    {
+        print 4560;
+    }
+    return 0;
+}
+
+float test_3() 
+begin 
+    int x = 1;
+    int y = -1;
+
+    if(x > 0 && y < 3) begin 
+        print 111;
+    end
+    else do 
+        print 000;
+    end 
+    return 3.0;
+end 
+
+int test_4()
+begin 
+    int x = -1;
+    int y = 2;
+    
+    if((!x > 0) || y < 3) begin 
+        print 111;
+    end
+    return 4;
+end 
+
+int test5() 
+begin 
+    int y = 0;
+    for (int y = 0; y < 5; y = y+1)
+    { 
+        if (y < 3) begin
+            continue;
+        end
+        else do 
+            print 118800;
+            break;
+        end 
+    } 
+    return y;
+end 
+
+bool test_6(int x)
+begin 
+    if(x < 1)
+    begin
+        print 1;
+        return false; 
+    end
+    else if(x < 3)
+    begin
+        print 2;
+        return false; 
+    end
+    else if(x < 5)
+    begin
+        print 3;
+        return false; 
+    end
+    else
+    {
+        print 3459;
+        return true;
+    }
+    
+end 
+
+int foo(int hej, float li, bool tree, int loopy, float tintin, int vik)
+begin 
+    print hej;
+    print li;
+    print tree;
+    print loopy;
+    print tintin;
+    print vik;
+    return 1;
+end 
+    
+
+
+
+

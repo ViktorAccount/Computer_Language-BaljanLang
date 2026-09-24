@@ -1,0 +1,37 @@
+int main
+{
+    int i = 5;
+    print "This is a prime number calculator";
+    list<int> primes = prime(1000);
+    print primes;
+    print primes.count();
+    return 0;
+}
+
+list prime(int number_to_find)
+{
+    list<int> primes_found;
+    primes_found.append(2);
+    int number = 3;
+    bool is_prime = true;
+    print 2;
+    while(primes_found.count() < number_to_find)
+    {
+        is_prime = true;
+        for(int i = 0; i < primes_found.count(); i = i + 1)
+        {
+            if(number % primes_found[i] == 0)
+            {
+                is_prime = false;
+                break;
+            }
+        }
+        if(is_prime)
+        {
+            primes_found.append(number);
+            print number;
+        }
+        number = number + 1;
+    }
+    return primes_found;
+}

@@ -1,0 +1,53 @@
+int main
+{
+    b = 7;
+    int x = 3;
+    int y = x;
+
+    for(int i = 10; i > 0; i = i - 1)
+    {
+        if(i % 2 == 0)
+        do
+            print(i);
+        end
+        else
+        {
+            print to_float(i);
+        }
+    }
+    print;
+    print b;
+    change_b();
+    print b;
+    print get_two() + get_two() + get_three() + get_two();
+    return 123456;
+}
+
+float to_float(int a)
+{
+    float x = 1.0;
+    return x * a;
+}
+
+int change_b
+{
+    b = 10;
+    return 0;
+}
+
+int get_three
+{
+    int c = 2;
+    if(true){c = c + 1;}
+    return c;
+}
+
+int get_two
+{
+    int c = 2;
+    if(false){1 + 1;}
+    c = c;
+    return c;
+}
+
+int b;
