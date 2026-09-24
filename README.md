@@ -1,5 +1,15 @@
+## Computer Language BaljanLang
+
+Skapade detta programmering språk med en från universitet
+
+$ ./runbl.rb  
+Program byter du ut mot din fil som har filändelsen .bl och du kan använda vilken kombination du vill av
+nedanstående flaggor.
+-debug Debug-utskrifter för parsern
+-tree Skriver ut hela programmet i en trädstruktur
+-norun Stänger av körning av programmet
+
 ## KOMPILERING 
-#=================================================================
 För att börja behöver du skapa en fil med filändelsen
 .bl där du kan skriva ditt program. När du har skrivit ett program så använder du runbl.rb för att kompilera och köra koden.
 
@@ -14,7 +24,7 @@ nedanstående flaggor.
 
 
 ## Datayper 
-#=======
+
     - int 
     - float 
     - bool 
@@ -24,7 +34,7 @@ nedanstående flaggor.
 
 
 ## Variabler
-#=======
+
     Exempel: 
 
     int x;
@@ -34,7 +44,7 @@ nedanstående flaggor.
 
 
 ## Print
-#=======
+
     Exempel: 
 
     int x = 5;
@@ -47,7 +57,6 @@ nedanstående flaggor.
 
 
 ## Loopar
-#=======
 
     - for(initiering; villkor; steg)
     - while(villkor)
@@ -71,7 +80,6 @@ nedanstående flaggor.
 
 
 ## Vilkorsatser
-#===========
 
     - if(villkor)
     - else if(villkor)
@@ -88,7 +96,7 @@ nedanstående flaggor.
 
 
 ## Operatorer 
-#===========
+
     Proritering
     - 1. %
     - 2. * /
@@ -97,7 +105,7 @@ nedanstående flaggor.
     - 5. && || !
 
 ## Funktioner
-#===========
+
     Exempel:
     int main()
     begin
@@ -113,7 +121,7 @@ nedanstående flaggor.
     end
 
 ## Listor
-#===========
+
     Exempel: 
     list<int> lista; -> []
     lista.insert(0, 5); -> [5]
